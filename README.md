@@ -8,6 +8,7 @@ A Google Chrome extension that leverages the Gemini API to automatically tailor 
 *   **Google Docs Injection**: Automatically duplicates your base CV and injects the new AI-tailored text, opening it in a new tab for your review.
 *   **PDF Export**: Approving the CV allows instant download as a clean `.pdf` file.
 *   **Secure API Handling**: Uses Google OAuth 2.0 for secure account connection, and stores your Gemini API key strictly in your local Chrome browser storage.
+*   **AI-Assisted Development**: Built and maintained using the **AntiGravity IDE AI agents**.
 
 ## How to Install (Developer Mode)
 This extension runs entirely locally on your machine.
