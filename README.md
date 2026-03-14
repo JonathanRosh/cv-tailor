@@ -6,7 +6,7 @@ A Google Chrome extension that leverages the Gemini API to automatically tailor 
 *   **Context-Aware AI**: Reads the job description directly from your active browser tab.
 *   **Smart Replacement**: Precisely targets your CV's summary paragraph and replaces it with a highly-tailored version of up to 60 words based on the job description.
 *   **Google Docs Injection**: Automatically duplicates your base CV and injects the new AI-tailored text, opening it in a new tab for your review.
-*   **PDF Export**: Approving the CV allows instant download as a clean `.pdf` file to your computer's default `Downloads` folder.
+*   **PDF Export**: Approving the CV allows instant download as a clean `.pdf` file. To keep you organized, it automatically creates a new folder in your `Downloads` directory named after the `Job Title - Company`, and places the PDF inside.
 *   **Secure API Handling**: Uses Google OAuth 2.0 for secure account connection, and stores your Gemini API key strictly in your local Chrome browser storage.
 
 ## How to Install (Developer Mode)
