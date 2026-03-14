@@ -1,0 +1,48 @@
+{
+  "manifest_version": 3,
+  "name": "CV Tailor",
+  "version": "1.0",
+  "description": "Automate tailoring your CV according to a job description.",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "identity",
+    "activeTab",
+    "scripting",
+    "storage",
+    "downloads",
+    "notifications"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://docs.google.com/document/d/*"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "oauth2": {
+    "client_id": "749293562139-ibstamtv2ndqc8obn9uuv1obpa2sl5n5.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/drive.readonly",
+      "https://www.googleapis.com/auth/documents",
+      "https://www.googleapis.com/auth/drive.file",
+      "https://www.googleapis.com/auth/userinfo.profile"
+    ]
+  }
+}

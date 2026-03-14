@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CV Tailor</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header style="text-align: center; padding-bottom: 12px;">
+      <h1
+        style="margin: 0; font-size: 20px; font-weight: 600; background: linear-gradient(90deg, #60a5fa, #a78bfa); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
+        CV Tailor</h1>
+      <p style="margin: 4px 0 0; font-size: 12px; color: #94a3b8;">Tailoring your CV with AI to get the interview</p>
+    </header>
+
+    <main id="app-content">
+      <div id="auth-section">
+        <button id="login-btn" class="primary-btn">Connect Google Account</button>
+      </div>
+
+      <div id="main-section" class="hidden">
+        <div class="cv-selector">
+          <label for="cv-select">Your Base CV (.docx):</label>
+          <select id="cv-select">
+            <option value="">Select a document...</option>
+          </select>
+          <button id="refresh-cv-btn" class="icon-btn" title="Refresh CV List">🔄</button>
+        </div>
+
+        <div class="api-key-section" id="api-key-input-container">
+          <label for="gemini-key">Gemini API Key:</label>
+          <input type="password" id="gemini-key" placeholder="Enter API Key" />
+          <button id="save-key-btn" class="secondary-btn">Save Key</button>
+        </div>
+
+        <div id="api-key-status-container" class="hidden api-key-section">
+          <span style="font-size: 12px; color: #4ade80;">✓ Gemini API Key configured</span>
+          <button id="clear-key-btn" class="secondary-btn" style="background-color: #ef4444; margin-top: 4px;">Clear
+            Key</button>
+        </div>
+
+        <button id="tailor-btn" class="primary-btn">
+          <div class="btn-content">
+            <svg class="spinner hidden" id="tailor-spinner" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-opacity="0.25" stroke-width="4"></circle>
+              <path d="M12 2a10 10 0 0 1 10 10" stroke="currentColor" stroke-width="4" stroke-linecap="round"></path>
+            </svg>
+            <span id="tailor-btn-text">Tailor CV to this Job</span>
+          </div>
+        </button>
+        <p id="status-msg"></p>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+
+</html>
