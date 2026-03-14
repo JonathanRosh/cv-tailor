@@ -1,5 +1,5 @@
 # CV Tailor
-A Google Chrome extension that leverages the Gemini API to automatically tailor the summary section of your Google Docs CV to any job description you are currently viewing online. **Built from scratch in collaboration with the AI agents of AntiGravity IDE.**
+A Google Chrome extension that leverages the Gemini API to automatically tailor the summary section of your Google Docs CV to any job description you are currently viewing online. Designed and developed with the assistance of AntiGravity IDE.
 
 ## Features
 *   **Google Drive Integration**: Fetches your base `.docx` / Google Doc CV directly from your Google Drive.
@@ -8,7 +8,6 @@ A Google Chrome extension that leverages the Gemini API to automatically tailor 
 *   **Google Docs Injection**: Automatically duplicates your base CV and injects the new AI-tailored text, opening it in a new tab for your review.
 *   **PDF Export**: Approving the CV allows instant download as a clean `.pdf` file to your computer's default `Downloads` folder.
 *   **Secure API Handling**: Uses Google OAuth 2.0 for secure account connection, and stores your Gemini API key strictly in your local Chrome browser storage.
-*   **Built with AntiGravity**: Developed from scratch in collaboration with the AI agents of **AntiGravity IDE**.
 
 ## How to Install (Developer Mode)
 This extension runs entirely locally on your machine.
